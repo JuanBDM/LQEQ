@@ -13,25 +13,50 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
 </head>
 
-<body>
-    <nav>
-        <div class="logo">
-            <h4>Lo que ellas quieren</h4>
-        </div>
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Caca</a></li>
-            <li><a href="#">Pedo</a></li>
-        </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-    </nav>
+  <!--INICIO DLE HEADER-->
+  <%- include("partials/header") %>
+  <!--FIN DEL HEADER-->
 
-    <script src="/js/nav.js"></script>
+<body>
+
+  <div class="slider">
+      <ul>
+          <li><img src="images/TEMPORADA 2022 (1).gif" alt=""></li>
+          <li><img src="images/TEMPORADA 2022. (2).gif" alt=""></li>
+          <li><img src="images/TEMPORADA 2022 (3).gif" alt=""></li>
+          <li><img src="images/Vení y probate lo que quieras.gif" alt=""></li>
+      </ul>
+  </div>
+
+  <div class="container">
+
+      <div class="card">
+          <img src= "images/registrate.gif">
+          <h4>Registrate</h4>
+          <p>¡Unite a nosotros completando un sencillo formulario!</p>
+          <a href="">Crear usuario</a>
+      </div>
+
+      <div class="card">
+        <img src= "images/elegi.gif">
+        <h4>Elegí</h4>
+        <p>¡Agrega al carrito los productos que desees!</p>
+        <a href="">Productos</a>
+    </div>
+
+    <div class="card">
+        <img src= "images/paga.gif">
+        <h4>¡Comprá!</h4>
+        <p>¿Ya sabes lo que queres? ¡Compralo!</p>
+        <a href="">Carrito</a>
+    </div>
+
+  </div>
+
+    <!--COMIENZO DEL FOOTER-->
+    <%- include("partials/footer") %>
+    <!--FIN DEL FOOTER-->
+
 </body>
 
 </html>
